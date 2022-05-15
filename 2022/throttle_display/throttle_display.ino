@@ -73,26 +73,24 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-//  if (digitalRead(3)) {
-//    // Neutral on
-//    Serial.println("Neutral: ON");
-//    if (!neutralEngaged) {
-//      tft.fillScreen(ILI9341_BLACK);
-//    }
-//    neutralEngaged = true;
-//    showNeutralScreen();
-//  }
-//  else {
-//    Serial.println("Neutral: OFF");
-//    // Neutral off
-//    if (neutralEngaged) {
-//      tft.fillScreen(ILI9341_BLACK);
-//    }
-//    neutralEngaged = false;
-//    showThrottleScreen();
-//  }
-
-  showThrottleScreen();
+  if (digitalRead(3)) {
+    // Neutral on
+    Serial.println("Neutral: ON");
+    if (!neutralEngaged) {
+      neutralEngaged = true;
+      tft.fillScreen(ILI9341_BLACK);
+    }
+    showNeutralScreen();
+  }
+  else {
+    Serial.println("Neutral: OFF");
+    // Neutral off
+    if (neutralEngaged) {
+      neutralEngaged = false;
+      tft.fillScreen(ILI9341_BLACK);
+    }
+    showThrottleScreen();
+  }
   
   throttle1 = analogRead(21);
   if (throttle1 > max1) max1 = throttle1;
