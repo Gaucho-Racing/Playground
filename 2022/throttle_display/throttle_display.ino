@@ -20,11 +20,45 @@ double min1 = 1000;
 double max2 = 0;
 double min2 = 1000;
 
+double throttle1 = 0.0;
+double throttle2 = 0.0;
+
+boolean neutralEngaged = false;
+
+void showThrottleScreen() {
+  tft.setTextSize(2);
+
+  tft.setTextColor(ILI9341_GREEN, ILI9341_BLACK);
+  tft.setCursor(10, 100);
+  tft.print("T: " + String(throttle1) + ", " + String(throttle2));
+  
+  tft.setTextColor(ILI9341_CYAN, ILI9341_BLACK);
+  tft.setCursor(10, 150);
+  tft.print("Min: " + String(min1) + ", " + String(min2));
+
+  tft.setTextColor(ILI9341_CYAN, ILI9341_BLACK);
+  tft.setCursor(10, 180);
+  tft.print("Max: " + String(max1) + ", " + String(max2));
+}
+
+void showNeutralScreen() {
+  tft.setTextSize(4);
+  tft.setTextColor(ILI9341_YELLOW, ILI9341_BLACK);
+  tft.setCursor(10, 100);
+  tft.print("NEUTRAL");
+  
+  tft.setTextSize(2);
+  tft.setTextColor(ILI9341_YELLOW, ILI9341_BLACK);
+  tft.setCursor(10, 150);
+  tft.print("T: " + String(throttle1) + ", " + String(throttle2));
+}
+
 void setup() {
   // put your setup code here, to run once:
   pinMode(21, INPUT);
   pinMode(22, INPUT);
-
+  pinMode(3, INPUT);
+  
   Serial.begin(38400);
   tft.begin();
   tft.setRotation(1);
@@ -39,33 +73,34 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  double throttle1 = analogRead(21);
+//  if (digitalRead(3)) {
+//    // Neutral on
+//    Serial.println("Neutral: ON");
+//    if (!neutralEngaged) {
+//      tft.fillScreen(ILI9341_BLACK);
+//    }
+//    neutralEngaged = true;
+//    showNeutralScreen();
+//  }
+//  else {
+//    Serial.println("Neutral: OFF");
+//    // Neutral off
+//    if (neutralEngaged) {
+//      tft.fillScreen(ILI9341_BLACK);
+//    }
+//    neutralEngaged = false;
+//    showThrottleScreen();
+//  }
+
+  showThrottleScreen();
+  
+  throttle1 = analogRead(21);
   if (throttle1 > max1) max1 = throttle1;
   if (throttle1 < min1) min1 = throttle1;
-  double throttle2 = analogRead(22);
+  throttle2 = analogRead(22);
   if (throttle2 > max2) max2 = throttle2;
   if (throttle2 < min2) min2 = throttle2;
   Serial.println("Port 21: " + String(throttle1) + " – Port 22: " + String(throttle2));
-
-  tft.setTextColor(ILI9341_GREEN, ILI9341_BLACK);
-  tft.setCursor(10, 100);
-  tft.print("T: " + String(throttle1) + ", " + String(throttle2));
   
-  tft.setTextColor(ILI9341_CYAN, ILI9341_BLACK);
-  tft.setCursor(10, 150);
-  tft.print("Min: " + String(min1) + ", " + String(min2));
-
-  tft.setTextColor(ILI9341_CYAN, ILI9341_BLACK);
-  tft.setCursor(10, 180);
-  tft.print("Max: " + String(max1) + ", " + String(max2));
-
-  // Scuffed clear text method
   delay(100);
-//  tft.setTextColor(ILI9341_BLACK);
-//  tft.setCursor(10, 100);
-//  tft.print("T: " + String(throttle1) + ", " + String(throttle2));
-//  tft.setCursor(10, 150);
-//  tft.print("Min: " + String(min1) + ", " + String(min2));
-//  tft.setCursor(10, 180);
-//  tft.print("Max: " + String(max1) + ", " + String(max2));
 }
