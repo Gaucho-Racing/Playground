@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="untitled" targetName="Z_DUMMY_TARGET" />
+      <config projectName="untitled" targetName="Debug" />
+      <config projectName="untitled" targetName="Production" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="teensy40" ENABLED="true" CONFIG_NAME="teensy40" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd1f02ea-57f3-413c-bb11-dcb937db82f0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../window_manager/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../window_manager/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../window_manager/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../window_manager/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../window_manager/lib/ArrayList.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../window_manager/src/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zephyr_test/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zephyr_test/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zephyr_test/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zephyr_test/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zephyr_test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zephyr_test/.pio/build/project.checksum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zephyr_test/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zephyr_test/src/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zephyr_test/zephyr/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../can_test/can_test.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pio_test/.idea/pio_test.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:teensy40" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2021" />
+    <option name="minorVersion" value="3.4" />
+  </component>
+  <component name="ProjectId" id="2D5FKRCIWVEe8vSYKFb340P3fX7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="settings.editor.selected.configurable" value="clion.platformio.config" />
+  </component>
+  <component name="RunManager" selected="PlatformIO.PlatformIO Debug">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Z_DUMMY_TARGET" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="Z_DUMMY_TARGET" CONFIG_NAME="teensy40" RUN_TARGET_PROJECT_NAME="untitled" RUN_TARGET_NAME="Z_DUMMY_TARGET">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlatformIO Debug" type="platformio" factoryName="PlatformIO Debug" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="Debug" CONFIG_NAME="teensy40" RUN_TARGET_PROJECT_NAME="untitled" RUN_TARGET_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlatformIO Upload" type="platformio" factoryName="PlatformIO Upload" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="Production" CONFIG_NAME="teensy40" RUN_TARGET_PROJECT_NAME="untitled" RUN_TARGET_NAME="Production">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.Z_DUMMY_TARGET" />
+      <item itemvalue="PlatformIO.PlatformIO Debug" />
+      <item itemvalue="PlatformIO.PlatformIO Upload" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd1f02ea-57f3-413c-bb11-dcb937db82f0" name="Changes" comment="" />
+      <created>1659980974353</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659980974353</updated>
+      <workItem from="1659980975515" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
